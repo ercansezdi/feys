@@ -2,7 +2,7 @@
 # -*- coding: utf8 -*-
 
 __auther__ = 'Ercan Sezdi'
-__version__ = '0.2'
+__version__ = '0.4'
 
 ##########################################################################################################################################################################################
 ########################################################################### LIBRARY ######################################################################################################
@@ -1673,7 +1673,7 @@ class tkinterGui(Frame):
                     yilArtiBir = int(self.yil) + 1 # bir sonraki yili aldım
                     self.yil = str(self.yil) + '-' +str(yilArtiBir) # ikisini birleştirdim örneğin yil 2017 bir fazlasi 2018 olur birleişimide 2017-2018
                     self.donem = 'Güz'
-    
+
                     #### delete
                     """
                     self.yil = '2017-2018'
@@ -1687,12 +1687,12 @@ class tkinterGui(Frame):
                     self.yil = '2017-2018'
                     self.donem = 'Bahar'
                     """
-                    
+
                 self.bugun = datetime.today().strftime('%d/%m/%Y') # Bugünün tarihini gun/ay/yil şeklinde alıyor
                 # delete
                 #self.bugun = '08/10/2018'
 
-                
+
                 self.databaseGuncelMi = self.elektControl.kontrol(self.yil,self.donem,self.bugun)  # True yada False döndürür // False --- > elektrik gitmedi //  True --- > elektrik gitti
 
             if verbose:
