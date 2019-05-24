@@ -25,5 +25,3 @@ Delete all local changes in the repository that have not been added to the stagi
 ```
 git checkout .
 ```
-Undo most recent commit
-```
